@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nick</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Header.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div></div>
+    <div>
+        <p id="logo">CityLoop</p>
+    </div>
+    <div id="tex">
+        <h1>What is Hyperloop?<br></h1>
+        <p>A new mode of transportation that will be more efficient than any other mode of transportation over a medium distance (500 km to 1000 km) by traveling in near vacuum environment.<br></p>
+        <h1>Problem Statement&nbsp;<br></h1>
+        <p>Design and build a small scale hyperloop pod, which will serve as a prototype to be used by future teams to enter the SpaceX Hyperloop Competition as well as attracting potential sponsors to fund the project.<br></p>
+        <h1>Competition Requirements<br></h1>
+        <p><strong>Pod Requirements</strong><br></p>
+        <ul>
+            <li>Max Height - 55.2 in</li>
+            <li>Max Width - 70.6 in</li>
+            <li>Contact surface width should be no more than 18 inches</li>
+            <li>Minimum contact surface is allowed to be 6 inches</li>
+            <li>Must fit over a track that is 5 inches by 5 inches</li>
+            <li>Pod must stop before 100 feet of the end of the track</li>
+            <li>Able to turn on a 15 mile radius track</li>
+        </ul>
+        <p><strong>The Tube</strong><br></p>
+        <ul>
+            <li>Diameter - 72in Outer, 70.6 in Inner</li>
+            <li>Length - between 1.25 to 1.51 km</li>
+            <li>Rail material (Aluminum 6061-T6)</li>
+            <li>Internal Pressure - 0.125 - 14.7 PSI</li>
+        </ul>
+        <h1>Customer Requirements<br></h1>
+        <ul>
+            <li>Pod should be suspended using Mag Lev</li>
+            <li>6in in diameter</li>
+            <li>Control should be input from a remote</li>
+            <li>Tested in a wind tunnel and low pressure environment</li>
+            <li>Pod needs to brake under its own means</li>
+        </ul>
+        <h1>Concept Generation and Concept Selection<br></h1>
+        <p>At high speed, wheels do not tend to work well as they exhibit wear and heat generation due to friction. To achieve maximum speed, we also want to eliminate friction. Therefore, a low friction suspension system is preferred when traveling at high
+            subsonic speeds. The methods of levitation we looked into for our passenger pod design were air bearings and magnetic levitation.<br></p>
+        <h1>Air Bearings <br></h1>
+        <p>The idea of involving air bearings to levitate the passenger pod was proposed in Elon Musk’s “Hyperloop Alpha.” &nbsp;The main consideration for air bearings was because they have been shown to work at speeds of Mach 1.1 with very low amounts
+            of friction. Similar to the procedure used on hockey table pucks to create a float-like illusion, loads are upheld by thin films of pressurized air. Unlike other types of bearings, air bearings are unique in the sense that they eradicate long-term
+            complications. By significantly reducing friction, problems such as wear and tear and lubricant management become eliminated. The fluid film procedure is composed of a consistent inflow of air being circulated between the bearing face and
+            the bearing gap. The whole circulation process is regulated and controlled by means of an apparatus covered in small openings; this apparatus ensures that a measured amount of air reaches the gap. The methodical release and constraint of the
+            air used in the bearing ensures that the levels of inflow and outflow of air are satisfactory enough to work within the gap. The coordinated discharge of air in the gap is what creates the foundation for the pressure that helps the bearing
+            sustain the working load. In the case of the hyperloop competition, the pod itself would produce an air cushion in order for it to levitate. <br>In the ground transportation industry, magnetic levitation involves vehicles that are suspended
+            and guided by electromagnetic forces. There are two types of electromagnetic suspension.<br><br></p>
+        <h1>Electromagnetic Suspension <br></h1>
+        <p>Electromagnetic Suspension is based on the attractive force of magnets. There are magnetized coils that run along the track, which are used to repel the magnets under the passenger pod. This allows the pod to levitate above the track that also
+            serves as a guideway. When the train levitates, power is supplied to the coils to produce a network of magnetic fields which moves the passenger pod along the track. The alternating electric current supplied to the coils along the track constantly
+            changes the polarity of the magnetized coils. It is this change in polarity that produces a magnetic field in front of the pod that pulls it forward, while the magnetic field in the back of the pod pushes it forward, producing thrust.<br><br></p>
+        <h1>Electrodynamic Suspension<br></h1>
+        <p>This type of suspension system is based on the repulsive force of magnets. There are superconducting magnets placed on the passenger pod and a track made of a conductive material. The superconducting magnets are the source of the magnetic field,
+            which are at certain height above the conductive track. Levitation is caused by repulsion forces between the electromagnets on the pod and the eddy currents induced into the track as the passenger pod moves along the track. The motion of the
+            magnets cause a change in magnetic field. Varying magnetic fields induce electric currents, called eddy currents, in a conductor, which in this case is the track. The eddy currents then induce a magnetic field in the conductive track. The
+            resulting magnetic field is a similar yet converse to the source magnetic field. These opposing magnetic fields exert a repulsive force which is required for obtaining a lift force. To maintain the repulsive force, the magnet must continuously
+            move over the conductive plate. For instance, a linear synchronous motor or linear induction motor is used for electromagnetic forward motion parallel to the track. However, as the magnet moves along the track, the symmetry of the induced
+            eddy currents are disrupted. This brings about a horizontal component of the magnetic field and a horizontal force on the magnet. According to Lenz’s law, this horizontal force opposes the motion of the magnet. Both lift and drag forces depend
+            on the plate’s conductivity and thickness and on the magnet’s velocity. At high velocities, the lift force converges to a single value, while the drag force is decreases as velocity increases.<br><br></p>
+        <h1>Selected Design Solution<br></h1>
+        <p>The levitating system chosen for our hyperloop pod design was electrodynamic suspension.<br>Anytime a conductor experiences a changing magnetic field, electric currents are induced, creating a magnetic field to oppose that change. This creates
+            a magnetic field that is nearly a mirror image of the magnetic fields of the magnets, thereby creating a repulsive force. If the change in magnetic field is great enough it will then lead to levitation. <br>For this project electrodynamic
+            levitation will be performed by using a quadcopter fitted with four spinning halbach magnet arrays. A halbach array is a specific arrangement of magnets used to strengthen the magnetic field of lower portion of the magnetic array while weakening
+            the magnetic field above the magnetic array. Each array consists of sixteen quarter inch cubic grade N52 neodymium magnets that will be placed in a circular arrangement in a 3D printed frame. Permanent magnets were used because they do not
+            require input energy and power for cooling, as opposed to electromagnets; Permanent magnets have a permanent magnetic field. Grade N52 permanent magnets were the strongest permanent magnets available for purchase. The magnetic arrays will
+            be rotated by a brushless AC motor at a speed of 1000 rpm over a sheet of Aluminum 6106 T6. It is the mechanical rotation of these magnetic arrays above the passive conductive rail guideway that will induce an opposing magnetic field into
+            the aluminum sheet. This will result in an opposing magnetic field being created that interacts with the spinning halbach arrays. This opposing field will produce a repulsive force between the conductive material and the magnetic source. The
+            repulsive force between the track and the spinning magnets serves as the lifting force of the pod. The faster the AC motor rotates the magnets, the stronger the magnetic field that will be induced into the track. The magnetic field induced
+            to the track is also expected to increase as the pod accelerates. <br><br></p>
+        <h1>Testing and Validation<br></h1>
+        <p>COMSOL was used to simulate and study the levitation abilities of one of the magnetic arrays. The “Magnetic Brake” and “Static Field Modeling of a Halbach Rotor” models, which were provided by the COMSOL Multiphysics application library, were
+            used as references to model and simulate our design. The geometry of the design was simplified for the model to be meshable. The frame in which the magnets were placed in was not modeled in COMSOL. However, the arrangement and position of
+            the magnets within the frame was modeled with respect to the subtrack. A portion of the subtrack was also modeled in COMSOL. The physics interface used for this simulation was “Magnetic and Electric Fields”. This was done to simulate magnetic
+            field induced into the track and obtain the lift force on the subtrack. In the following semester, the results of the simulation will be compared to the results of a conducted experiment involving a simple model of the levitation device that
+            is in accordance with the model configured in COMSOL.&nbsp;<br></p>
+        <h1>Simulation<br></h1>
+        <p>The first step of building the model was creating the geometry. From a new window, we start by selecting a blank model. In the blank model window, since we are creating a 3D geometry, a 3D component is added. We started by creating a table of
+            parameters in COMSOL. In the Model Builder window, under Global Definitions, the Parameters tab was selected. In the Settings window for Parameters, the values shown in Table 1 were entered:<br><br></p><img src="assets/img/t11.png">
+        <p>At first, a sphere was produced by going to the Geometry toolbar and clicking Sphere. In the Settings window for Sphere, the Size section was located. In the Radius text field, the value dr*3 was typed in. Then a cylinder was produced, which was
+            renamed as Disc. In the Settings window for Cylinder 1, the Size and Shape section was located to set the dimensions of the cylinder. In the Radius and height text fields, dr and dt were typed in the text fields, respectively. In the Position
+            section, -dt/2 was typed in the z text field. In the Selections of Resulting Entities section, the Resulting objects selection checkbox was checked. Thus, a selection named Disc was then automatically created for the disc.<br></p>
+        <p>Next, the geometry of the magnets were designed using a work plane and extrusion. In the Geometry toolbar, Work Plane icon was selected. In the Settings window for Work Plane, the xy-plane was selected from the plane list in the Plane Definition
+            section. In the z-coordinate text field, mg + dt/2 was typed in for the distance between the disk and the work plane. Afterwards, we clicked Show Work Plane. In the Work Plane toolbar, Primitives was clicked to sketch a square in the work
+            plane. In the Settings window for square, the Size and Shape section was located to set these parameters. In the Width and Height text fields, me was typed in both text fields. To sketch center square, the center option was chosen from the
+            base list in the Position section. This process was done for fifteen additional squares whose centers are along the boundary of a circle with a radius of 0.8 inches. We needed to ensure this circular arrangement of squares had equal spacing.
+            Each square was rotated in order to form a circular pattern of the frame holding the magnets, otherwise the base of each square would have been horizontal. Then Build Selected was clicked after each square has been sketched. The position and
+            rotation of each center square are defined in the Table 2.<br></p><img src="assets/img/2.png">
+        <p class="cap"><strong>The geometry on the work plane should look like figure 3.</strong><br></p><img src="assets/img/3.png">
+        <p class="cap"><strong>Figure 3. 2D geometry model of the halbach array.</strong><br></p>
+        <p>The work plane geometry was then extruded. The squares were extruded 0.25 inches along the z-axis by typing in me in the distances section. Afterwards, Build All Objects was clicked to extrude the squares.<br></p>
+        <p>The exterior boundaries of the sphere were hidden to show only the array of cubes and the disc. In the Graphics toolbar, the Click and Hide button was clicked. The Select Boundaries button was clicked in order to select the exterior boundaries
+            of the sphere, boundaries 1–8 on the object labeled sphere one. The Click and Hide button was clicked again to deactivate it. The model geometry was then complete. <br><br></p><img src="assets/img/4.png">
+        <p class="cap"><strong>Figure 4. completed model geometry of the levitation system.</strong><br></p>
+        <p>After geometry model was completed, it was save as hyperloop_lev_3d_geom_sequence.mph. This was done in case we wanted to run and save the different approaches to simulate the magnetic levitation in separate files. The geometry model could then
+            be imported into any new file rather than recreate the model for each attempt. Each attempt to simulate the was saved as a new mph file with the same filename but with a different version number at the end of the filename.&nbsp;<br></p>
+        <p>From a new window, we selected model wizard. To simulate a halbach array spinning over a conducting sheet we selected the "Magnetic and Electric Fields" interface in the physics tree and stationary study in the study tree. The geometry sequence
+            file is inserted from the Insert Sequence button in the geometry toolbar. After importing the geometry model, we added materials to the components.<br></p>
+        <p>In the Home toolbar, Add Material was clicked to open the Add Material window. We navigated over to the Add Material window where the add material tree was expanded to locate the built-in material tree. From the built-in material tree, air was
+            selected to be added to the component. We then returned to the Add Material tree to add Aluminum 6101-T6 [25C] to the component.Right-clicking on Aluminum 6101-T6 in Materials section opened up the settings window. In the Geometric Entity
+            Selection section of the Aluminum, the disk was selected to make the disc aluminum.<br></p>
+        <p>Some elements of the component needed to be defined in order to proceed. We went to Definitions to click Mass Properties 1. In the Settings window for Mass Properties, the Source Selection section was located to click clear selection. Then from
+            the selection list, we chose Disc. Next, the Variables section was located in order to choose Spatial (x, y, z) from the Frame list. The density of the material of the material, in this case, aluminum, was used to compute the moment of inertia.
+            To do this, mat2.def.rho was typed in the text field of Density expression, which was found in the Density section. All check boxes were cleared except for Create moment of inertia variables. The Mass Properties node defined the moment of
+            inertia variables as mass1.Ixx, mass1.Ixy, etc.<br></p>
+        <p>In this section the magnetic and electric fields were defined for the component. Magnetic and Electric Fields was selected under Component 1. After that, we clicked to expand the Equation section in the Settings window for Magnetic and Electric
+            Fields. From the Equation form list, we chose Stationary to solve a stationary problem for the magnetic field.<br></p>
+        <p>The cubes needed to be defined as permanent magnets with each cube following a specific arrangement set forth by the halbach array. Every component was defined using Ampère’s Law and Current Conservation in the magnetic and electric fields section.
+            In Ampère’s Law and Current Conservation 1, the Conduction Current section was located to define σ as 1. For Ampère’s Law and Current Conservation 2, Domains 3, 7, 11, and 15 were selected. These were the first permanent magnet of each of
+            the four halbach wavelengths; these were also known as squares 1, 5, 9, and 12. In the Conduction Current section, σ was set as one and the Br vector was according to the specified values indicated in Table 3.<br></p><img src="assets/img/5_1.png"
+            class="ta">
+        <p class="cap"><strong>Table 3. Br vector values.</strong><br></p>
+        <p>The same process was repeated for the second, third, and fourth magnets of each halbach wavelength. Except that for each Domain selection the neighboring magnet of the previous magnet in each halbach wavelength would be selected. The sigma and
+            magnetic flux vector values were the same for every permanent magnet. In Ampère’s Law and Current Conservation 6, the Disc was selected for the Domain Selection section Ampère’s Law and Current Conservation 6 was then renamed as Disc.<br></p>
+        <p>The rotation of the halbach array was modelled using the "Velocity (Lorentz Term)" domain physics, in which the aluminum disc rotates with a specified rotational velocity. In the Physics toolbar, we selected Velocity (Lorentz Term). In the Settings
+            window for Velocity (Lorentz Term), we located the Domain Selection section to select the Disc. In the Velocity (Lorentz Term) section, the values of the v vector was specified as shown in Table 4.<br></p><img src="assets/img/6_1.png" class="ta">
+        <p
+            class="cap"><strong>Table 4. V vector values.</strong><br></p>
+            <p>Variable W was specified as the angular velocity, which was later used as a variable in the ODE<br></p>
+            <p>The differential equation that describes the rotational motion of the conductive disc was defined in the Global ODEs and DAEs selection. In the Settings window for Global Equations, the Global Equations section was used to specify the differential
+                equation describing the dynamics of the disc. This differential equation is shown in Table 5.<br></p><img src="assets/img/tf1.png">
+            <p class="cap"><strong>Table 5. Differential equation that describes the dynamics of the disc in the table.</strong><br></p>
+            <p>Units section was located and then Dependent Variable Quantity was selected. In the Physical Quantity dialog box, angular frequency was typed in the text field and then Filter button was checked. In the tree, General was selected in order
+                to choose Angular frequency. In the Settings window for Global Equations, the Units section was located to select Source Term Quantity.<br></p>
+            <p>In the Physical Quantity dialog box, angular acceleration was typed in the text field and then Filter button was clicked. General was again selected in the tree to select Angular acceleration. This was the differential equation that described
+                rotational motion of the conductive disc.<br></p>
+            <p>The magnitude of this force is calculated by the integration of all vertical forces acting on the sheet using the "Force Calculation.” In the Model Builder window, Integration 1 was right-clicked to open the Settings window for Integration.
+                From there the Domain Selection section was located in order to choose Disc. The Advanced section was also located in the Settings window. For the selection of method, integration order, and frame lists, choose Integration, 4, and spatial
+                (x,y,z), respectively. A variable was then defined for the Lorentz force of the magnets. To do this, we selected Definitions under Component 1 and then clicked Variables 1. In the Settings window for Variables, the following settings in
+                Table 6 were entered in the variables section:<br></p><img src="assets/img/tf.png">
+            <p class="cap"><strong>Table 6. Force calculation expression</strong><br></p>
+            <p>The mathematical model needed to be split into finite elements using meshes. Under component one in the Model Builder window, Mesh 1 was right-clicked so that we could choose the mesh size. In the Settings window for Size, the Element Size
+                section was located and from the Predefined list, Coarser was selected. In the Settings window for Size 1, the element size was selected to be extremely fine. In the Geometric Entity Selection section, the Disc was selected. Following
+                that, Mesh 1 was right-clicked again except this time we chose Free Tetrahedral. In the Settings window for Free Tetrahedral, we typed 1.1 in the z-direction scale text field. The mesh was then created on the model by clicking Build All.<br></p>
+            <p>A stationary study was performed to obtain the initial values followed by time dependent study to correctly account for the magnetic fields from spinning permanent magnets. To set up the stationary study, Study 1 was right-clicked to select
+                Stationary. In the Settings window for Stationary, the Solve for checkbox of the Global ODEs and DAEs interface was cleared. For the time dependent study, Time Dependent was chosen after clicking Study Steps under the Study toolbar. In
+                the Times text field, we typed the range to be from zero to thirty seconds.Then in the Tolerance list, User controlled was selected and 0.001 was typed in for the Relative tolerance. In the Study toolbar, we clicked Show Default Solver.
+                Solution 1 node was expanded to select Time Dependent Solver 1. In the Settings window for Time-Dependent Solver, we expanded the Absolute Tolerance section to select Fy-Lorentz from the variables list. From the Method list, Unscaled was
+                selected. The tolerance was then manually changed to 0.1. It was ensured that fully coupled was selected from the Time-Dependent Solver 1 section. In the time dependent settings, results while solving and the plot checkbox were selected.<br></p>
+            <h1>Results and Discussion<br></h1>
+            <p>The results were plotted using a 3D plot and a 1D plot. The 3D plot was used to plot the current density on the track, in this case the aluminum disk. The 1D plot was used to plot the lift force as a function of time.<br></p>
+            <p>Magnetic levitation was modeled using permanent magnets arranged in an Halbach array over a conductor. The COMSOL Multiphysics model was set up for a 0.5 in thick Aluminum 6101 T6 disc with a radius of 6 in and an angular speed of 1000 rpm.
+                All the magnets were 1.48 Tesla permanent magnets with a 0.125 in air gap with the rotating conductive disc. The Force on the track was calculated using Lorentz forces, which was calculated by integrating the Lorentz force terms over the
+                track. The figures 5 and 6 below show the induced eddy current density and the lift force over time.<br></p><img>
+            <p class="cap"><strong>Figure 5. Lift force on the track with the Lorentz Force method</strong><br></p><img>
+            <p class="cap"><strong>Figure 6. Surface plot showing the current density on the surface of the disc.</strong><br></p>
+            <h1>Build summary: Selected Design<br><br></h1>
+            <p>One of the main obstacles for the hyperloop is using magnetic levitation on top of aluminum. This would limit our design to using electrodynamic suspension for levitation above the track. Another limitation to our design is the limited track
+                length we must operate with, forcing us to use active electrodynamic suspension instead of a passive one. This leaves us with two options, using coils with an alternating current or rotating a circular array of permanent magnets at a very
+                high rpm. The use of coils would be easier to implement except this design option is relatively unstable and has a prohibitively power requirement to match the magnetic field produced by the latter option. Therefore, we chose to use a
+                rotating circular array. The design we came up with is based on the design of a magnetic quadcopter. Using this design would make it easier to have stable levitation without worrying too much about pitch and yaw. To achieve stability the
+                four rotors will be rotating in the direction according to the following figure:<br></p><img src="assets/img/9.png">
+            <p class="cap"><strong>Figure . Direction of spin for each rotor.</strong><br></p>
+            <p>This arrangement is used to counteract any moment created by the individual arrays during operation. The next component to consider are the magnets. The magnets that will be used are rare earth N52 cube magnets. These magnets are the strongest
+                magnets available in the market and will be most efficient for inducing a magnetic field into the aluminum track. The magnets will be arranged in a Halbach array to increase the strength of the magnetic field on one side. There will be
+                16 quarter inch cube magnets per rotor totaling to 64 magnets for the entire levitation system. Each rotor will be attached to an AC brushless motor that will be operating simultaneously. Each rotor will be located at each corner of the
+                frame and will be as close to the frame as possible to mitigate vibrations caused by flexing parts. The motors will be bolted to a cage designed to hold the motor in place relative to the frame. The cage will be attached to the frame from
+                both the top and bottom of the motor.<br></p>
+            <h1>Linear Induction motor report</h1>
+            <p>The idea of the Linear Induction Motor has floated around since the 1800s, though authors cannot pinpoint the exact time or place where this idea took hold. It is believed that the idea for the linear electric motor is as old as the rotary
+                electric motor. The very first linear motor was made by Charles Wheatstone and it was a reluctance machine in 1845. Nikola Tesla invented the induction motor in 1888. From there, the idea for a linear induction motor got its first patent
+                &nbsp;in 1895. As time passed, there were more and more breakthroughs in this field. This includes a full-scale aircraft launcher built by Westinghouse in 1946, which was actually an induction motor with a moving primary.<br></p>
+            <p>The linear induction motor is a type of linear electric machine that develops electromagnetic forces using the concepts of Faraday’s and Ampere’s laws. These electromagnetic forces combine to produce linear motion. There are two types of linear
+                electric machines, the ones that produce progressive motion and the ones that produce oscillatory motion.&nbsp;<br></p>
+            <p>The shape of machines that produce linear progressive motion are different from the linear oscillatory machines (LOMs). &nbsp;Progressive motion LEMs are three phase ac devices that tend to operate with brushless configurations. On the other
+                hand, LOMs are typically single-phase ac devices. There are a few advantages to using the progressive motion LEMs, mainly that they can operate at different voltages and frequencies that should change the speed at high efficiency. &nbsp;This
+                is not the case with LOMs which must operate under a fixed frequency.<br></p>
+            <p>The motors that fall under the description of linear progressive motion machines are Linear induction machines, linear synchronous machines, linear brushless dc machines and linear dc brush machines. These were considered when we were deciding
+                what to use to power our miniature hyperloop pod. &nbsp;<br></p>
+            <p>The linear induction motor has been gaining popularity over time. The main application of the LIM and the one thing it is most known for is in transportation, where a part of the motor can be placed on the vehicle and the other part placed
+                on or around the track. LIM are also used in cranes, elevators, actuators that move doors, high voltage circuit breakers and accelerators.According the Korean Society for Railway, they use the LIM as propulsion in their maglev trains because
+                they are lightweight and inexpensive to produce .The most widely used linear motor is the single sided linear induction motor (SLIM). The linear induction motor is a rotary motor that has straightened been out and laid flat on a surface
+                like shown in the figure below.<br></p><img src="assets/img/14.png">
+            <p class="cap"><strong>Figure : &nbsp;A Rotary motor becoming unrolled into a linear motor. - Design of a Single sided linear induction motor for magnetic levitation railway transportation</strong><br></p>
+            <p>The primary, which tends to be the stator of the LIM is made up off slot in a rectangular model &nbsp;that are formed by a stack of steel laminations. In between these slots there are the polyphase windings that produce a magnetic field that
+                is traveling on a linear path, they perform the same function that a rotating magnetic field would have on a rotary induction motor. The secondary of the LIM, which would be the rotor, is usually made of a copper or aluminum sheet and
+                can be accompanied by a solid back iron plate. This is not always the case for the rotor. The main function of this rotor is to complete the magnetic circuit and to create a magnetic flux that links across the air gap between the rotor
+                and the stator. When this link is created, it induces a voltage on the conductive wall which in turn generates an eddy current in the conducting outer layer of the secondary. When the eddy current interacts with the changing electromagnetic
+                field, &nbsp;electromagnetic thrust is generated on the plate in the linear direction of the motor. To be clear, our design of the linear induction motor will have the primary attached to the pod and it will move along a secondary that
+                will be on the surface of the rail.<br></p><img src="assets/img/11.png">
+            <p class="cap"><strong>Figure : Side view of an LIM from Modeling of Linear Induction </strong><br></p>
+            <p>The potential of the Linear Induction Motor is only limited by your imagination, the uses for this particular piece of technology has applications far beyond what we have discovered for it so far. The power generated from a linear induction
+                motor can be several thousand Newtons.<br></p>
+            <p class="cap">Linear induction Motor Electrical Components<br></p><img src="assets/img/12.png">
+            <p class="cap"><strong>Figure : Normalized waveforms in a three phase system in one cycle in a 1-2-3 phase order. Cycle repeats with the frequency of the power system. In each phase’s voltage, current, and power is offset from others by 120</strong><br></p>
+            <p>Having Three Phase Power in a motor means that there are three alternating currents &nbsp;uniformly separated in a phase angle. Alternating currents alternate cyclically by flowing in one direction in a circuit and then reversing the flow
+                of the current in the other. When this is happening, the magnitude of the voltage supplied varies continuously between a positive and negative maximum amplitude. As mentioned before, these electric services &nbsp;are uniformly separated
+                in phase angles. When this occurs the points in time where these legs of alternating current reach the maximum voltage are separated by 1/3 of the time in a full cycle. The constant alternating current from all three of the currents ensures
+                that the total power supplied remains constant. For our project, this is a necessity. The hyperloop cannot suffer drops in power or the magnetic field needed to levitate the pod would vary wildly and not be able to keep a constant level.<br></p>
+            <p>In most designs for the three-phase motors, there is one set of windings for each phase. This design has been found to be very efficient and allows for the three phase motor to draw less current than the single – phase motor.<br></p>
+            <p>Single phase – motors are not ideal for what we are trying to make. The single phase motor that generates an equivalent amount of horsepower will draw much more current and will also be larger in size. This brings in the cost factor, as the
+                larger single phase motor is also much more expensive. Our linear induction motor is going to be small, as you can see in …………<br><br></p>
+            <h1><strong>Forces on a linear induction motor</strong><br></h1>
+            <p>There are three main forces that act on the Linear Induction Motor: normal force, thrust and lateral force. The normal force is perpendicular to the stator in the z-direction. When using a single-sided motor, levitation can be generated from
+                the magnetic field generated during the motors use. In a typical arrangement this magnetic levitation force is negated as an iron backing is used on the secondary, thus the attraction forces overcome the lift generated. &nbsp;Any forces
+                that move the LIM laterally are undesired and they only develop due to the orientation of the stator.<br></p><img src="assets/img/13.png">
+            <p class="cap"><strong>Forces of a linear induction motor.&nbsp;</strong><br></p>
+            <p>The normal forces behave differently when in an single-sided linear induction motor (SLIM) and when in a double-sided linear induction motor (DLIM) arrangement. A double sided linear induction motor has the reaction plate located between two
+                primary stators. The normal force between the between the stator and the reaction plate is equal and opposite to the second stator. This creates a resultant force that is normal force equal to zero. The only way to see a change in the
+                net normal force of a linear induction motor is to place the reaction plate asymmetrically between the stators. These two forces acting simultaneously on the reaction place allow for the motor to keep the vehicle in line and moving straight
+                as they repel off of the aluminum plate. This was a big draw that made us consider the use of the double sided linear induction motor. <br></p>
+            <p>In the case of a single sided linear induction motor, there is no second primary stator to apply an equal and opposite force. Instead, there is a large net normal force between the primary and the secondary because of the fundamental asymmetrical
+                topology. When in a synchronous speed, the force is attractive and the magnitude becomes lessened as the speed dwindles. There are also cases where certain speeds can make the force repulsive. <br></p>
+            <p>The main goal of the LIM is develop thrust. The thrust that the LIM generates is proportional to the square of the applied voltage. Thrust is reduced when slip is reduced, and it’s behavior is similar to that of an induction motor with high
+                rotor resistance.<br></p>
+            <p>The thrust can be calculated using the following formula<br></p><img src="assets/img/14.png">
+            <p><strong>Where <em>Vc </em>is the linear speed of the rotor and<em> Po </em>&nbsp;is the mechanical power transmitted to the rotor.</strong><br></p>
+            <p>There are also lateral forces that act on the LIM in the y-direction that are perpendicular to the movement of the rotor. These lateral forces have the potential to make the LIM system unstable. They occur when the stator in the LIM is positioned
+                asymmetrically in the LIM. If the displacement is small, there will only be small lateral forces as a result. The problems really begin when working under high frequency conditions of over 60 Hz because the forces then begin to increase
+                in magnitude. To negate this, it is recommended to stabilize the linear induction motor. This is especially true for the single sided linear induction motor. <br></p>
+            <h1>Motor Calculations<br></h1>
+            <p>The type of motor which we will be developing is a 3-phase linear induction motor. This type of motor is denoted by the 3 different current phases that are being supplied to the primary. In order to generate the thrust from our motor, the
+                3 currents need to lag 120 degrees from one another as shown in Figure ___ above. The voltage which is supplied to our motor will more than likely denote our acceleration during its run. For now our, voltage will be dependent on the power
+                supply that we can get for our motor &nbsp;<br></p><img src="assets/img/15.png">
+            <p class="cap"><strong>Figure : &nbsp;A Rotary motor becoming unrolled into a linear motor. - Design of a Single sided linear induction motor for magnetic levitation railway transportation&nbsp;</strong><br></p>
+            <p><img src="assets/img/16.png"><br></p>
+            <p class="cap"><strong>Figure - AC Induction Motor visualization to count phases and poles -Linear Induction Motor Final Report PDF </strong><br></p><img src="assets/img/17.png">
+            <p class="cap"><strong>Figure - Rotary Induction motor, Length of a Single sided LIM - Research PDF</strong><br></p><img src="assets/img/18.png">
+            <p class="cap"><strong>This is the Electrical equivalent circuit for a motor</strong><br></p><img src="assets/img/19.png">
+            <p class="cap"><strong>Figure :SLIM Geometry from Research PDF</strong><br></p>
+            <p>Our velocity achieved by our linear induction motor will be determined by the simple equation: V=2∙τ∙f. Solving for this equation not only provides us the nominal velocity that our motor will travel, but also help us a few of the physical
+                characteristics of our motor. The variables that we are inputting into this equation are , which is the pitch for our phase windings and f, which is the frequency of our current. The frequency that we will be supplying to our motor will
+                be 60 Hz. the number of pitches for primary windings that will be on our motor is 4. Knowing this we can determine the size of our pitch to be:τ=30cm4poles +1=6cm per pitch. in order to determine the size of the slots within each pitch,
+                we use the following equation: s=3=2cm, which gives us the distance from one slot to the next. With each slot having an current that lags 120 degrees from the one prior. &nbsp;With sbeing our slot pitch, we can assume a value for our slot
+                width and the tooth width which will be given the values of 15mm and 5mm for the slot and tooth widths respectively. Using these values, we calculated a total nominal velocity of 7.2 m/s.<br></p>
+            <p>Our prototype will only need to travel a total distance of approximately 3 meters, this means that we are hoping to accelerate to our max velocity along this distance and safely brake within that period of time. As denoted above, it has been
+                determined that our acceleration is proportional to the voltage supplied to the motor using the equation:<br></p><img src="assets/img/e.png" class="ta">
+            <p>To determine the material needed to produce our motor, we looked at similar motors that are already on the market. A typical 3 phase 4 pole linear induction motor, is comprised of a squirrel cage in which the wires are wound around to create
+                the necessary torque. Other motors are also typically made out of iron cores, because of its high permeability. With any device that is required to have an electric current passing through, we also need to worry about magnetic losses due
+                to hysteresis. This occurs due to the magnetic field flowing in all directions as it flows through the core. In order to prevent this and decrease our magnetic losses from the core, a laminated motor is required. This is done by selecting
+                a material and stacking layers of the material with a thickness of approximately .1 to .5 mm, onto one another into the desired shape. This prevents eddy currents from forming within the material, and forcing the current to flow in only
+                one direction, longitudinally in relation to our motor. Looking at transformers, which are devices designed to have high currents and voltages passing through them, as an example for what materials to use, it was determined that steel
+                laminations is the best option to use as a base material for our motor.<br></p>
+            <h1><strong>Viable Options</strong></h1>
+            <p>During our decision making process, we looked at a few other viable options in which we could look towards using as a means of moving our pod. The linear induction motor, as well as magnetic levitation, were staple components to the design
+                of our pod, thus, we already had a clear goal as to what we needed to design. However, we did analyze a few back ups in case of the event in which we were unable to produce a functioning linear induction motor. <br></p>
+            <p>One of the very first options that we discussed using was a standard rotary motor. Rotary motors are simple to come by and could supply the necessary torque that we would need to move our pod. It would not be something that we would need to
+                construct, however finding the right sized motors to supply necessary torque and being able to it within the size constraints of our design may prove to be difficult. <br></p>
+            <p>Another option that we decided to look at was constructing a double sided linear induction motor. Instead of having a single motor attached to the bottom of the pod and parallel to the top of the track, we would attach 2 motors to under the
+                pod, which would wrap around the track facing inwards and be perpendicular to the top of the track. This would potentially prove too difficult for various reasons as we would need to make sure our arrangement would be perfect to keep the
+                motors balanced and symmetrical about the track as well as the cost of attaching another motor to the pod would significantly affect our limited budget. <br></p>
+            <p>We also considered the use of linear synchronous motors in our design. Linear synchronous motors provide high electrical-to-mechanical efficiency as well as allow for precise control of the position of the vehicle, in addition to allowing
+                for great speeds to be achieved during travel. They however come with the disadvantages of requiring the exact position of the on-board magnets to ensure that the vehicle is synchronous during travel. Use of a LSM also requires the use
+                of an “active track” in which stator coils are placed into the track and are used to energize each block of the track during the vehicles journey.<br></p>
+            <h1>Our Model</h1>
+            <p>From the research we gathered and studied, we concluded that we would use a single sided linear induction motor. Our primary, where all the coils and electrical materials are located, will be placed in the pod on the center. The secondary
+                of the LIM will be the reactive sheet which we have designed to be located on the track. The single sided linear induction motor will have ---- slots. We designed the motor to be a three phase ac motor with -----poles <br></p><img src="assets/img/19.png">
+            <p
+                class="cap"><strong>Figure &nbsp;: This is the design of the LIM motor we intend to build</strong><br></p><img src="assets/img/20.png">
+                <p class="cap"><strong>Figure : Here is the LIM placed in the pod </strong><br></p>
+                <p><strong>Works cited So far</strong><br></p>
+                <p>Characteristic Analysis of a Linear Induction Motor for 200 km/h Maglev<br></p><img src="assets/img/21.png"><img src="assets/img/19.png"><img src="assets/img/lim.png">
+                <p class="cap"><strong>Figure : The detailed design of our LIM in mm</strong><br></p>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
